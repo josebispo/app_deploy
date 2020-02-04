@@ -50,6 +50,8 @@ jobs:
 
       # prepare the database
       - run: touch storage/testing.sqlite
+      - run: touch storage/database.sqlite
+      - run:  cp .env.testing .env
       - run: php artisan migrate --env=testing --database=sqlite_testing --force
 
       # run tests with phpunit or codecept
