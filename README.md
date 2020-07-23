@@ -76,3 +76,11 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+Muito obrigado pelo seu comentário  o primeiro ponto é que ele não loga todos os dados do custom Onboarding na verdade ele não cobre os requests do sistema todo, 
+
+Eu rastreei onde é realizado a criação da proposta até aqui no PropostaContaCorrenteV2 e adicionei esse writelog, ele não passa no doPost com esses dados somente os da empresa e do sócio, esses por isso esse log aqui, também tem a etapa de construção essa sim é logada no logInDb,
+
+Agora o logInDbele esta salvando certinho os logs do banco,  adicionei o writelog  “sem medo” como recomendado nos curl_exec’s estou testando a passagem por eles.
+
